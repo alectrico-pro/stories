@@ -77,6 +77,30 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
+
+      <amp-story-page id="foo">
+	<amp-story-grid-layer template="fill">
+	  <amp-img src="https://example.ampproject.org/helloworld/bg1.jpg" width="900" height="1600">
+	</amp-story-grid-layer>
+	<amp-story-page-attachment layout="nodisplay">
+	  <h1>My title</h1>
+	  <p>Lots of interesting text with <a href="https://example.ampproject.org">links</a>!</p>
+	  <p>More text and a YouTube video!</p>
+	  <amp-youtube
+	      data-videoid="b4Vhdr8jtx0"
+	      layout="responsive"
+	      width="480" height="270">
+	  </amp-youtube>
+	  <p>And a tweet!</p>
+	  <amp-twitter
+	      data-tweetid="885634330868850689"
+	      layout="responsive"
+	      width="480" height="270">
+	  </amp-twitter>
+	</amp-story-page-attachment>
+      </amp-story-page>
+
+
       <!---
       <amp-story-bookend src="bookendv1.json" layout="nodisplay">
       </amp-story-bookend>
