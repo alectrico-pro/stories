@@ -3,7 +3,7 @@
   "bookendVersion": "v1.0",
   "shareProviders": [
     "email",
-    "tumblr"
+    "tumblr",
     {
       "provider": "twitter",
       // You can add custom sharing parameters depending on the social platform.
