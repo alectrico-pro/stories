@@ -812,31 +812,33 @@
           <amp-img src="https://example.ampproject.org/helloworld/bg1.jpg"
               width="900" height="1600">
           </amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1>Hello, amp-story!</h1>
-        </amp-story-grid-layer>
-      </amp-story-page>
-      <amp-story-page id="my-second-page">
-        <amp-story-grid-layer template="fill">
-          <amp-img src="https://example.ampproject.org/helloworld/bg2.gif"
-              width="900" height="1600">
-          </amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1>The End</h1>
-        </amp-story-grid-layer>
-      </amp-story-page>
-      <amp-story-bookend src="bookendv1.json" layout="nodisplay">
-      </amp-story-bookend>
-    </amp-story>
-    <!--
-    <amp-state
-       id = "remoto"
-       src="https://www.alectrico.cl/api/v1/electrico/circuitos/cart.json?clientId=CLIENT_ID(uid)&_=RANDOM">
-     </amp-state>
-    -->
-    <amp-sidebar id="drawermenu" layout="nodisplay">
+    </amp-story-grid-layer>
+    <amp-story-grid-layer template="vertical">
+      <h1>Hello, amp-story!</h1>
+    </amp-story-grid-layer>
+  </amp-story-page>
+    <amp-story-page id="my-second-page">
+      <amp-story-grid-layer template="fill">
+	<amp-img src="https://example.ampproject.org/helloworld/bg2.gif"
+	    width="900" height="1600">
+	</amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+	<h1>The End</h1>
+     <!---
+      </amp-story-grid-layer>
+    </amp-story-page>
+    <amp-story-bookend src="bookendv1.json" layout="nodisplay">
+    </amp-story-bookend>
+  </amp-story>
+   --!>
+  <!--
+  <amp-state
+     id = "remoto"
+     src="https://www.alectrico.cl/api/v1/electrico/circuitos/cart.json?clientId=CLIENT_ID(uid)&_=RANDOM">
+   </amp-state>
+  -->
+  <amp-sidebar id="drawermenu" layout="nodisplay">
       <!--
       <a href="https://servicios.alectrico.cl" class="caps text-decoration-none block p1">Servicios</a>
       <a href="https://shop.alectrico.cl" class="caps text-decoration-none block p1">Shop</a>
@@ -3467,5 +3469,11 @@
 	</script>
       </amp-analytics>
     </div>
+      </amp-story-grid-layer>
+    </amp-story-page>
+    <amp-story-bookend src="bookendv1.json" layout="nodisplay">
+    </amp-story-bookend>
+  </amp-story>
+
   </body>
 </html>
