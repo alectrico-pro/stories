@@ -24,20 +24,20 @@
 	background-audio="my.mp3">
 
 
-<amp-story-page id="cover">
-  <amp-story-grid-layer template="fill">
-    <amp-video layout="fill" src="matus.mp4" poster="background.png" muted autoplay></amp-video>
-  </amp-story-grid-layer>
-  <amp-story-grid-layer template="vertical">
-    <h1>Relatos sobre Calidad Eléctrica</h1>
-    <p>Ing. Alexander Espinosa </p>
-    <p>Instalador Eléctrico Autorizado SEC</p>
-    <p>Mayor 2019</p>
-  </amp-story-grid-layer>
-  <amp-story-grid-layer template="thirds">
-    <amp-img grid-area="bottom-third" src="alectrico.png" width="64" height="64"></amp-img>
-  </amp-story-grid-layer>
-</amp-story-page>
+      <amp-story-page id="cover">
+	<amp-story-grid-layer template="fill">
+	  <amp-video layout="fill" src="matus.mp4" poster="alectrico.png" muted autoplay></amp-video>
+	</amp-story-grid-layer>
+	<amp-story-grid-layer template="vertical">
+	  <h1>Relatos sobre Calidad Eléctrica</h1>
+	  <p>Ing. Alexander Espinosa </p>
+	  <p>Instalador Eléctrico Autorizado SEC</p>
+	  <p>Mayor 2019</p>
+	</amp-story-grid-layer>
+	<amp-story-grid-layer template="thirds">
+	  <amp-img grid-area="bottom-third" src="alectrico.png" width="64" height="64"></amp-img>
+	</amp-story-grid-layer>
+      </amp-story-page>
 
 
 
@@ -61,6 +61,19 @@
           <h1>Fin</h1>
         </amp-story-grid-layer>
       </amp-story-page>
+
+      <amp-story-page id="vertical-template-thirds">
+	<amp-story-grid-layer template="thirds">
+	  <div class="content" grid-area="upper-third">Paragraph 1</div>
+	  <div class="content" grid-area="middle-third">Paragraph 2</div>
+	  <div class="content" grid-area="lower-third">Paragraph 3</div>
+	</amp-story-grid-layer>
+	<amp-story-cta-layer>
+	  <a href="https://alectrico.cl" class="button">Outlink here!</a>
+	</amp-story-cta-layer>
+      </amp-story-page>
+
+
       <!---
       <amp-story-bookend src="bookendv1.json" layout="nodisplay">
       </amp-story-bookend>
