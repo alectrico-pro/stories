@@ -825,24 +825,14 @@
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
 	<h1>The End</h1>
-     <!---
       </amp-story-grid-layer>
     </amp-story-page>
     <amp-story-bookend src="bookendv1.json" layout="nodisplay">
     </amp-story-bookend>
   </amp-story>
-   --!>
-  <!--
-  <amp-state
-     id = "remoto"
-     src="https://www.alectrico.cl/api/v1/electrico/circuitos/cart.json?clientId=CLIENT_ID(uid)&_=RANDOM">
-   </amp-state>
-  -->
   <amp-sidebar id="drawermenu" layout="nodisplay">
-      <!--
       <a href="https://servicios.alectrico.cl" class="caps text-decoration-none block p1">Servicios</a>
       <a href="https://shop.alectrico.cl" class="caps text-decoration-none block p1">Shop</a>
-
       <hr>
       <a class="caps text-decoration-none block p1" 
         href="https://alectrico.cl/santiago">Santiago</a> 
@@ -851,36 +841,15 @@
         href="https://alectrico.cl/providencia">Providencia</a> 
       <a class="caps text-decoration-none block p1"
         href="https://alectrico.cl/ñuñoa">Ñuñoa</a>
-      -->
       <a class="caps text-decoration-none block p1"
         href="https://repair.alectrico.cl">Repair</a>
       <a class="caps text-decoration-none block p1"
-        href="https://repair.alectrico.cl">Designer</a>
+        href="https://designer.alectrico.cl">Designer</a>
 
     </amp-sidebar>
 
     <div id="abe-preview-header" 
       class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-      <!--
-      <a href=".." class="caps text-decoration-none">
-        <i class="align-middle inline-block mr1">
-          <svg fill="#000000" 
- 	    height="24" viewBox="0 0 24 24" 
-	    width="24" xmlns="http://www.w3.org/2000/svg">
-	    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-	    <path d="M0 0h24v24H0z" fill="none"/>
-	  </svg>
-        </i>
-     </a>
-     -->
-
-     <!--
-      <amp-img srcset="/img/logo_flash.png" 
-	width="424" 
-	height="88" 
-	alt="logo flash">
-      </amp-img>
-      -->
       <amp-img srcset="/safari-pinned-tab.svg" 
         width="24" 
         height="24" 
@@ -892,17 +861,10 @@
       </h1>
       <section amp-access="NOT loggedIn">
         <template amp-access-template type="amp-mustache">
-	<!--
-         {{presupuesto_local}}-local
-	 -->
         </template>
       </section>
       <section amp-access="loggedIn">
         <template amp-access-template type="amp-mustache">
-        <!---
-	{{presupuesto_local}}-local {{dueno_local}} | remoto-{{presupuesto_remoto}}
-	  {{dueno_remoto}} | current_user {{current_user}}
-	  -->
 	  {{current_user}}
         </template>
       </section>
@@ -918,14 +880,6 @@
 	     alt="navigation">
 	    </amp-img>
 	  </a>
-	  <!---
-	  <form method="GET" action="https://shop.alectrico.cl/productos/10" 
-	    target="_top">
-	    <input name="search" type="search" placeholder="Buscar">
-	    <a id="sample-logo" href="/">Designer</a> 
-	    <input type="submit" value="">
-	  </form>
-	  -->
 	</div>
         <h2 class="m1">Historias de Calidad Eléctrica</h2>
 	<h3 class="m1">Cuéntenos su propia historia</h3>
@@ -1322,9 +1276,6 @@
 		  </li>
 		</ul>
 	      </div>
-	    <!--
-	      Carruseles
-	    -->
 
 	     <div class="product-gallery">
 		<amp-carousel id="blue-apple-carousel"
@@ -1723,48 +1674,6 @@
 		<amp-image-lightbox 
 		  id="gallery-lightbox"
 		  layout="nodisplay">
-                 <!--
-                  <div
-		   id = "zoom"
-		   class = "clearfix" >
-		     <div 
-		       class = "left" >
-		       <div
-			  role="button"
-			  tabindex="0" >
-			  <form method   = "POST"
-			    action-xhr = "https://www.alectrico.cl/api/v1/electrico/circuitos/deleteElectrodomestico.json"
-			      target    = "_top"
-			      on = "submit-success:carrusel-list.refresh,cart-list.refresh">
-			     <input name = "clientId" 
-				 type = "hidden" 
-				 value = "CLIENT_ID(uid)" 
-				 data-amp-replace = "CLIENT_ID">
-			     <input 
-                             hidden
-			     name = "id" 
-			     [value] = "id" > 
-			     <button 
-				class="ampstart-btn caps m2 borrar-gallery-button"
-				type = "submit" > Borrar
-			     </button>
-			  </form>
-                        </div>
-                     </div>
-		     <div
-		       class = "right" >
-			<div on="tap:gallery-lightbox.close"
-			  role="button"
-			  tabindex="0">
-			  <button class="ampstart-btn caps m2 close-gallery-button"
-			    on="tap:gallery-lightbox.close"
-			    role="button"
-			    tabindex="0">
-			    Cerrar
-			  </button>
-			</div>
-		     </div>
-                  -->
                     <div class = "right close-gallery-button" >
 
 		      <button class="ampstart-btn caps m2"
@@ -1786,13 +1695,6 @@
 			 hidden
 			 name = "id" 
 			 [value] = "id" > 
-		    
-			<!--- 
-			 <button 
-			    class="ampstart-btn caps mtx5 mb2 ml2 mr2"
-			    type = "submit" > Borrar
-			 </button>
-                        -->
 		      </form>
 		    </div>
 		 </amp-image-lightbox>
@@ -2054,10 +1956,6 @@
 	      <p class="price-description"> Seleccionado:
 		<span [text]="product[product.selectedColor].nombres[product.selectedSlide]">Ampolleta LED.</span> </p>
 
-	      <!--
-                on = "submit-success:carrusel-list.refresh,cart-list.refresh;submit-error:carrusel-list.refresh,cart-list.refresh,carrusel-list.show,boton-login.show"
-
-	      -->
 	      <form id="order"
 		method="POST"
 		action-xhr="https://www.alectrico.cl/api/v1/electrico/circuitos/addToCircuito.json"
@@ -2091,12 +1989,6 @@
 			      })">
 		    <ul class="p0 m1">
 
-		      <!--
-		      <li>
-			<div option="blue"
-			  class="square blue"></div>
-		      </li>
-		       -->
 		      <li>
 			<div option="green"
 			  selected
@@ -2286,7 +2178,6 @@
 	      <span [text]="product.circuitos[product.selectedPotencia]">I: Iluminación</span>
 	      <span [text]="product[product.selectedColor].potencias[product.selectedPotencia]">200 W</span>
 	    </p>
-	 <!-- fin de Galería de Productos -->
 
 	  <div class="items-center flex my1 ml1">
 	    <input type="submit"
@@ -2313,9 +2204,6 @@
 	    </template>
 	  </div>
 	</form>
-	<!--
-	checkout-section
-	-->
         <section>	
 	  <amp-list 
 	    template = "carrusel-list-template"
@@ -2340,23 +2228,11 @@
 	  <template 
 	  id = "carrusel-list-template"
 	  type="amp-mustache">
-	    <!--
-	    Electrodomésticos en este dispositivo
-	    <br/>
-	    Presupuesto en este dispositivo es {{presupuesto_local}}
-	    {{time_stamp}}
-	    <hr/>
-	    -->
 	    {{^items}}
 	    Presione AGREGAR para agregar electrodomésticos.
 	    {{/items}}
 	    
             {{#items}}
-<!--
-	    <a class="text-decoration-none p1"
-	      href="#">
-            </a>
--->
 	      <amp-img width="100"
 		tabindex = 0
 		height="90"
@@ -2383,40 +2259,9 @@
 		id = "caption"
 		hidden>
 		{{nombre}}. Potencia: {{potencia}} W. Circuito: {{circuito}}.
-		<!---
-		<form method   = "POST"
-		    class = "close-gallery-button"
-		    action-xhr = "https://www.alectrico.cl/api/v1/electrico/circuitos/{{id}}/dropFromCircuito.json"
-		    target    = "_top"
-		    on = "submit-success:carrusel-list.refresh">
-		   <input name = "clientId" 
-		       type = "hidden" 
-		       value = "CLIENT_ID(uid)" 
-		       data-amp-replace = "CLIENT_ID">
-		   <button  type = "submit" > x </button>
-
-		</form>
-		-->
 
 	      </div>
             {{/items}}
-	    <!--
-            <form method   = "POST"
-              action-xhr = "https://www.alectrico.cl/api/v1/electrico/circuitos/{{id}}/dropFromCircuito.json"
-              target    = "_top"
-              on = "submit-success:carrusel-list.refresh,cart-list.refresh">
-              <input name = "clientId" 
-                 type = "hidden" 
-                 value = "CLIENT_ID(uid)" 
-                 data-amp-replace = "CLIENT_ID">
-              <button  type = "submit" > x
-              </button>
-            </form>
-          <hr/>
-	  <button
-	    on = "tap:carrusel-list.refresh,cart-list.refresh,cart-list-dueno.refresh"> Refrescar
-	  </button>
-	  -->
 	 </template>
         </section>
 
@@ -2425,56 +2270,9 @@
 	  data-iframe-src="https://stories.com/sw.js"
 	  layout="nodisplay">
 	</amp-install-serviceworker>
-
-        <!--
-
-    .tabContent {
-        line-height: 1.5rem;
-        display: none;
-        width: 100%;
-        order: 1;
-    }
-
-    .tabButton[selected]::after {
-      content: '';
-      display: block;
-      height: 4px;
-      background: linear-gradient(90deg,#94103e 0,#db004d);
-    }
-
-    .tabButton[selected]+.tabContent {
-        display: block;
-    }
-
-
-
-
-	<amp-selector role="tablist"
-	  layout="container"
-	  class="ampTabContainer ampstart-headerbar-nav"
-	  keyboard-select-mode="select">
-	  <div role="tab"
-	    class="tabButton h4 ampstart-nav-item"
-	    option="c">CIRCUITOS</div>
-	  <div role="tabpanel"
-	    class="tabContent p1 p">Se muestran los circuitos a los que podría conectar electrodomésticos. Aquellos que no son adecuados para un electrodoméstico en particular están marcados con una X. En algunos circuitos solo puede haber un tipo de electrodoméstico, estos circuitos se llaman exclusivos.</div>
-	  <div role="tab"
-	    class="tabButton h4 ampstart-nav-item"
-	    selected
-	    option="a">GRUPOS</div>
-	  <div role="tabpanel"
-	    class="tabContent p1 p">Los electrodomésticos están agrupados de acuerdo a la potencia máxima que consumen y considerando los circuitos a los que pueden ser conectados. El grupo azul es diferente, no agrupa electrodomésticos sino los servicios que puede contratar en alectrico.cl.</div>
-
-	</amp-selector>
-        -->
-
       <section amp-access="NOT loggedIn"
 	amp-access-hide >
         <template amp-access-template type="amp-mustache">
-	<!--
-	 No hay ninguna sesión abierta. Los electrodomésticos del dispositivo están agrupados en un presupuesto con id: {{presupuesto_local}}.
-         <hr/>
-	 -->
         </template>
       </section>
 
@@ -2482,33 +2280,9 @@
       <section amp-access="loggedIn"
 	[hidden] = "inicial.invisible"
 	>
-       <!--
-	<div class="my2">
-	    <button amp-access="loggedIn" 
-	      on= "tap:cart-list.refresh,cart-list-dueno.refresh,carrusel-list.refresh,AMP.setState({ dueno: {invisible: false}, inicial: { invisible: true } })"
-	      amp-access-hide
-	      tabindex="0"
-	      class="ampstart-btn ml1 caps" >Sincronizar</button>
-	    <span amp-access= "loggedIn">... desde otro dispositivo</span>
-	</div>
-        -->
-
 
         <template amp-access-template type="amp-mustache"
            id = "access-list-template">
-	   <!--
-	   <hr/>
-	   {{time_stamp}}
-	   Lista de electrodomésticos inicial del usuario logado
-	   <br/>
-           El id de presupuesto de este usuario es:
-	   {{presupuesto_dispositivo}}
-	   <br/>
-           El dueño del presupuesto en el dispositivo es:
-	   {{dueño}}
-	   <br/>
-           El usuario logado en el backend es: {{current_user}}
-	   -->
 	   {{#presupuesto_remoto}}
              <form id="sync"
                 method="POST"
@@ -2539,77 +2313,12 @@
 
              </form>
          {{/presupuesto_remoto}}
-	 <!--
-	 {{#items}}
-             <amp-img width="70.31"
-              on="tap:gallery-lightbox,AMP.setState({ id:  {{id}} } )"
-                role = "button"
-                tabindex = 0
-                height="46.8"
-                layout="fixed"
-                aria-describedby = "caption"
-                alt="{{cantidad}}"
-                src="{{img}}">
-              </amp-img>
-
-          {{/items}}
-	  {{^items}}
-	    <section amp-access="loggedIn" 
-	      id= "resumen" 
-	      class= "checkout-section"
-	      amp-access-hide = "" >
-	       <amp-list 
-		  template="cart-list-template"
-		  credentials="include"
-		  width="auto"
-		  height="180"
-		  items="."
-		  single-item
-		  layout="fixed-height"
-		  src="https://www.alectrico.cl/api/v1/electrico/circuitos/get.json?clientId=CLIENT_ID(uid)&_=RANDOM"
-		  id="cart-list">
-		  <div overflow = "" class = "list-overflow">VER MÁS</div>
-		</amp-list>
-	     </section>
-	  {{/items}}
-
-	  -->
         </template>
       </section>
 
       
       <section>
 
-       <!---
-        <div class="my2">
-            <button amp-access="loggedIn" 
-              on= "tap:cart-list.refresh,cart-list-dueno.refresh,carrusel-list.refresh,AMP.setState({ dueno: {invisible: false}, inicial: { invisible: true } })"
-              amp-access-hide
-              tabindex="0"
-              class="ampstart-btn ml1 caps" >Sincronizar</button>
-            <span amp-access= "loggedIn">... desde otro dispositivo</span>
-        </div>
-        --->
-
-       <!---
-        <amp-list
-         hidden
-         [hidden] = "dueno.invisible"
-	 amp-access = "loggedIn"
-	 template="cart-list-dueno-template"
-	 id = "cart-list-dueno"
-	 amp-access-hide
-	 credentials = "include"
-	 items = "."
-	 single-item
-	 height = "180"
-	 width = "auto"
-	 layout = "fixed-height"
-         src="https://www.alectrico.cl/api/v1/electrico/circuitos/cart.json?clientId=CLIENT_ID(uid)&_=RANDOM"
-	 >
-        <div overflow = "" class = "list-overflow">VER MÁS</div>
-	</amp-list>
-	-->
       </section>
 
       <template type="amp-mustache"
@@ -2617,18 +2326,6 @@
 
 	  <hr/>
 	  {{time_stamp}}
-	  <!--
-	  cart-list-dueno  loggedIn y amp-access-hide - no debe ser mostrado al inicio- porque tiene una versión atrasada de los datos, mostrando
-	  un current_user que ya no lo es. Responde a un código de
-	  refresh. Debe intercambiarse con otro cart-list que usa una fuente de autorización. La que a la inversa de esta. No cambia ni se refresca.
-	  <br/>
-	  El presupuesto del usuario es {{presupuesto}}
-          <br/>
-          El usuario logado en el backend es {{current_user}}
-          <br/>
-          El usuario dueño del presupuesto en el dispositivo es {{dueño}}
-          <br/>
-	  -->
           {{#items}}
              <amp-img width="70.31"
               on="tap:gallery-lightbox,AMP.setState({ id:  {{id}} } )"
@@ -2760,18 +2457,6 @@
 
       <template type="amp-mustache"
 	id = "cart-list-template">
-	<!---
-	<hr/>
-	{{time_stamp}}
-	Electrodomésticos de este dispositivo
-	<br/>
-	El presupuesto de este dispositivo es {{presupuesto_local}}
-	<br/>
-	Current_user {{current_user}}
-	<br/>
-	Dueño del presupuesto {{dueño}}
-	<hr/>
-	-->
 	<div class="shopping-cart">
 	  <div class="item header">
 	    <div class="name">
@@ -2795,40 +2480,6 @@
 
 	  <hr/>
 
-         <!--
-	  {{#potencia_total_industrial}}
-
-	  <div class= "item summary">
-	     <div class="name">
-	       <strong> Potencia Total Cliente Industrial:</strong>
-	     </div>
-	     <div class="price">
-	       <strong>{{.}} W</strong>
-	     </div>
-	     <div class="quantity">
-	     </div>
-	  </div>
-
-	  {{/potencia_total_industrial}}
-
-          {{#potencia_total_domiciliaria}}
-
-          <div class= "item summary">
-             <div class="name">
-               <strong> Potencia Total del Empalme:</strong>
-               <small>Solo es válido para viviendas</small>
-               <small>No se usa para locales comerciales ni industriales</small>
-             </div>
-             <div class="price">
-               <strong>{{.}} W</strong>
-             </div>
-             <div class="quantity">
-             </div>
-          </div>
-
-          {{/potencia_total_domiciliaria}}
-
-          -->
 
           {{#is_total}}
 
@@ -2862,23 +2513,6 @@
           </div>
 
           {{/potencia_instalada}}
-
-          <!--
-          {{#fp_minimo}}
-
-          <div class= "item summary">
-             <div class="name">
-               <strong>Factor de Potencia Mínimo:</strong>
-               <small>Solo para viviendas</small>
-             </div>
-             <div class="price">
-               <strong>{{fp_minimo}}</strong>
-             </div>
-             <div class="quantity">
-             </div>
-          </div>
-	  {{/fp_minimo}}
-	  -->
 
 	{{#empalme_sugerido}}
           <div class= "item summary">
@@ -2944,38 +2578,10 @@
 
 
 
-          <!---
-	  <div class="item summary">
-	    <div class="name"></div>
-	    <div class="price">
-	       <strong>Sum:</strong>
-	    </div>
-	    <div class="quantity">
-	      <strong>{{total}}</strong>
-	    </div>
-	  </div>
-          --->
 	</div>
       </template>
 
       <div class="my2">
-	<!--
-        <button 
-	  hidden
-	  [hidden] = "presupuesto.Iniciado == 1 ? false : true"
-	  on="tap:amp-access.login-sign-in,AMP.setState({presupuesto: {Iniciado: 2}})"
-	  id="boton-login"
-	  class="ampstart-btn ampstart-btn-secondary ml1 caps">Inicie Sesión
-	</button>
-	<span 
-          hidden
-          [hidden] = "presupuesto.Iniciado == 1 ? false : true">... para ver los detalles
-        </span>
-        <span 
-          hidden
-          [hidden] = "presupuesto.Iniciado == 1 ? false : true">   -- o --    
-        </span> 
-	-->
         <button amp-access="NOT loggedIn" 
 	  on="tap:amp-access.login-sign-up,AMP.setState({registro_usuario: {iniciado: 1}})"
 	  amp-access-hide
@@ -2985,17 +2591,6 @@
 	<span amp-access= "NOT subscriber AND NOT loggedIn">... para guardar su trabajo
 	</span>
       </div>
-      <!---
-      <div class="my2">
-        <div amp-access="NOT subscriber AND NOT loggedIn" amp-access-hide>
-          <button amp-access="NOT loggedIn" 
-            amp-access-hide
-            tabindex="0"
-            class="ampstart-btn ml1 caps" >Cree una Cuenta</button>
-          <span amp-access= "NOT subscriber AND NOT loggedIn">... para guardar su trabajo</span>
-        </div>
-      </div>
-      -->
 
       <div class="my2">
 	<button amp-access="NOT loggedIn" 
@@ -3005,10 +2600,6 @@
 	<span amp-access="NOT loggedIn">... para analizar sus circuitos
 	</span>
 	 
-	<!--
-	  <span amp-access="NOT loggedIn AND presupuesto_local"
-			class="inline-block ml1">...para ver el análisis de factibilidad</span>
-	-->
 
 	<button amp-access="loggedIn"
 	  tabindex="0"
@@ -3127,12 +2718,10 @@
 	    </button>
 	  </div>
 	</section>
-	<!--- ----- --->
 
 	<button [class]="currentStep != 1 ? 'step-title' : 'step-title step-active'" [disabled]='!contactoSelected' class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 1})'>
 	  <i [class]="problemaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='2'></i> Descripción del Problema
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep !=1' hidden=''>
 	  <div class='content'>
 	    <form action-xhr='https://www.alectrico.cl/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' method='post' on='submit-success:AMP.setState({problemaSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/presupuestos/verify'>
@@ -3175,12 +2764,10 @@
 	    </form>
 	  </div>
 	</section>
-	<!-- --- --- --->
 	<button [class]="currentStep != 2 ? 'step-title' : 'step-title step-active'" [disabled]='!problemaSelected' class='step-active step-title' disabled='' on='tap:AMP.pushState({ currentStep: 2})'>
 	  <i [class]="tipo_trabajoSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='3'></i>
 	  Tipo de Trabajo
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep != 2' hidden=''>
 	  <div class='content'>
 	    <form action-xhr='https://www.alectrico.cl/amp/presupuestos/create' class='' custom-validation-reporting='show-first-on-submit' id='tipo_trabajo' method='post' on='submit-success:AMP.setState({tipo_trabajoSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/accesos/verify'>
@@ -3214,11 +2801,9 @@
 	    </form>
 	  </div>
 	</section>
-	<!-- -->
 	<button [class]="currentStep != 3 ? 'step-title' : 'step-title step-active'" [disabled]='!tipo_trabajoSelected' class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 3})'>
 	  <i [class]="direccionSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='4'></i>Dirección
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep !=3' hidden=''>
 	  <div class='content'>
 	    <form action-xhr='https://www.alectrico.cl/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' method='post' on='submit-success:AMP.setState({direccionSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/presupuestos/verify'>
@@ -3268,7 +2853,6 @@
 	    </form>
 	  </div>
 	</section>
-	<!--- -->
 	<form action-xhr='https://www.alectrico.cl/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' id='data' method='post' on='submit-success:AMP.setState({problemaSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/presupuestos/verify'>
 	  <input data-amp-replace='CLIENT_ID' name='clientId' type='hidden' value='CLIENT_ID(uid)'>
 	  <input name='etapa' type='hidden' value='visita'>
@@ -3291,7 +2875,6 @@
 	    </amp-selector>
 	  </div>
 	</section>
-	<!-- -->
 	<button [class]="currentStep !=5 ? 'step-title' : 'step-title step-active'" [disabled]='!semanaSelected' class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 5})'>
 	  <i [class]="horaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='6'></i>Hora del día
 	</button>
@@ -3306,12 +2889,10 @@
 	  </div>
 	</section>
 
-	<!-- -->
 	<button [class]="currentStep != 6 ? 'step-title' : 'step-title step-active'" [disabled]='!horaSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 6})'>
 	  <i [class]="destinoSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='7'></i>
 	  Destino de la Propiedad
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep != 6' hidden=''>
 	  <div class='content'>
 	    <p></p>
@@ -3321,11 +2902,9 @@
 	    </amp-selector>
 	  </div>
 	</section>
-	<!-- -->
 	<button [class]="currentStep != 7 ? 'step-title' : 'step-title step-active'" [disabled]='!destinoSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 7})'>
 	  <i [class]="reunionSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='8'></i>Lugar de Reunión de Personas
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep != 7' hidden=''>
 	  <div class='content'>
 	    <p>¿En la propiedad se observa la permanencia de 25 personas por más de 15 minutos?</p>
@@ -3335,11 +2914,9 @@
 	    </amp-selector>
 	  </div>
 	</section>
-	<!--- -->
 	<button [class]="currentStep != 8 ?  'step-title' : 'step-title step-active'" [disabled]='!reunionSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 8})'>
 	  <i [class]="croquisSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='9'></i>Planos Eléctricos
 	</button>
-	<!--- -->
 	<section [hidden]='currentStep != 8' hidden=''>
 	  <div class='content'>
 	    <p>¿Posee los planos de la Instalación Eléctrica?</p>
@@ -3349,11 +2926,9 @@
 	    </amp-selector>
 	  </div>
 	</section>
-	<!-- -->
 	<button [class]="currentStep != 9 ?  'step-title' : 'step-title step-active'" [disabled]='!croquisSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 9})'>
 	  <i [class]="titularidadSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='10'></i>Titularidad
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep != 9' hidden=''>
 	  <div class='content'>
 	    <p>¿Ud. es el actual dueño o dueña de la propiedad?</p>
@@ -3363,11 +2938,9 @@
 	    </amp-selector>
 	  </div>
 	</section>
-	<!-- -->
 	<button [class]="currentStep != 10 ?  'step-title' : 'step-title step-active'" [disabled]='!titularidadSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 10})'>
 	  <i [class]="rolSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='11'></i>ROL y RUT
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep != 10' hidden=''>
 	  <div class='content'>
 	    <form action-xhr='https://www.alectrico.cl/amp/presupuestos/create' class='' custom-validation-reporting='show-all-on-submit' method='post' on='submit-success:AMP.setState({rolSelected: true})' target='_top' verify-xhr='https://www.alectrico.cl/amp/presupuestos/verify'>
@@ -3415,41 +2988,18 @@
 		</template>
 	      </div>
 	    </form>
-            <!---
-	    <button [disabled]='!rolSelected' [hidden]='!rolSelected' disabled hidden on='tap:AMP.pushState({currentStep: currentStep + 1})' type='submit'>
-	    continuar
-	    </button>
-            -->
 	    </div>
 	</section>
-        <!-- -->
         <button [class]="currentStep != 11 ?  'step-title' : 'step-title step-active'" hidden [disabled]='!rolSelected' [hidden]="atencion.selectedServicio != 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 11})'>
           <i [class]="rolSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='.'></i>Fin del Pedido
         </button>
-        <!-- -->
 
-        <!-- -->
         <button [class]="currentStep != 11 ?  'step-title' : 'step-title step-active'" hidden [disabled]='!horaSelected' [hidden]="atencion.selectedServicio == 'certificación'" class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 11})'>
           <i [class]="horaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='.'></i>Fin del Pedido
         </button>
-        <!-- -->
 
 
       </div>
-      <!--googleon: all-->
-
-
-      <!--
-      <div class="my2">
-	<div amp-access="NOT subscriber AND NOT loggedIn" amp-access-hide>
-	  <button amp-access="NOT loggedIn" 
-	    amp-access-hide
-	    tabindex="0"
-	    class="ampstart-btn ml1 caps" >Cree una Cuenta</button>
-	  <span amp-access= "NOT subscriber AND NOT loggedIn">... para guardar su trabajo</span>
-	</div>
-      </div>
-      -->
 
       <amp-analytics type="googleanalytics">
 	<script type="application/json">{
