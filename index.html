@@ -2818,7 +2818,6 @@
 		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='name'>Dirección</label>
 		      <span validation-for='direccion' visible-when-invalid='valueMissing'></span>
 		    </div>
-		    <!-- Start Input -->
 		    <div class='ampstart-input inline-block relative m0 p0 mb3'>
 		      <input class='block border-none p0 m0' id='comuna' name='comuna' on='select:AMP.setState({ direccionSelected: true})' placeholder='Comuna' required type='text' value='' pattern = "(providencia|PROVIDENCIA|Providencia|ñuñoa|Ñuñoa|ÑUÑOA)" on = "select:AMP.setState({ direccionSelected: true})">
 		      <label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='comuna'>Comuna</label>
@@ -2861,7 +2860,6 @@
 	<button [class]="currentStep != 4 ? 'step-title' : 'step-title step-active'" [disabled]='!direccionSelected' class='step-title step-active' disabled='' on='tap:AMP.pushState({ currentStep: 4})'>
 	  <i [class]="semanaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='5'></i>Día de la semana
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep !=4' hidden=''>
 	  <div class='content'>
 	    <p>¿Qué día de la semana le resulta más conveniente para una visita eléctrica?</p>
@@ -2879,7 +2877,6 @@
 	<button [class]="currentStep !=5 ? 'step-title' : 'step-title step-active'" [disabled]='!semanaSelected' class='step-title' disabled='' on='tap:AMP.pushState({ currentStep: 5})'>
 	  <i [class]="horaSelected ? 'step-complete' : 'step-incomplete'" class='step-incomplete' data-step-nr='6'></i>Hora del día
 	</button>
-	<!-- -->
 	<section [hidden]='currentStep != 5' hidden=''>
 	  <div class='content'>
 	    <p>¿Qué horario del día le resulta más conveniente para una visita eléctrica?</p>
@@ -2956,7 +2953,6 @@
 	      <span validation-for='rol' visible-when-invalid='valueMissing'></span>
 	      <span validation-for='rol' visible-when-invalid='patternMismatch'>Ingrese el ROL con un guión intermedio: xxxxx-xxxxx</span>
 	      </div>
-	      <!-- Start Input -->
 	      <div class='ampstart-input inline-block relative m0 p0 mb3'>
 		<input class='block border-none p0 m0' id='rut' name='rut' pattern='(\d{1}|\d{2})\.\d{3}\.\d{3}-(k|\d{1})' placeholder='RUT' required type='text' value=''>
 		<label aria-hidden='true' class='absolute top-0 right-0 bottom-0 left-0' for='rut'>RUT</label>
