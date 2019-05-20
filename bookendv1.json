@@ -1,28 +1,18 @@
 {
-  // You must specify version v1.0.
-  "bookendVersion": "v1.0",
-  "shareProviders": [
+  "bookend-version": "v1.0",
+  "share-providers": [
     "email",
-    "tumblr"
-    {
-      "provider": "twitter",
-      // You can add custom sharing parameters depending on the social platform.
-      "text": "This is custom share text that I would like for the Twitter platform"
-    },
-    {
-      "provider": "facebook",
-      // Facebook requires an `app_id` param
-      "app_id": "MY_FACEBOOK_APP_ID"
-    }
+    {"provider": "facebook", "app-id": "254325784911610"},
+    "whatsapp"
   ],
   "components": [
     {
-      "type": "heading",
-      "text": "More to read"
+      "type": "article-set-title",
+      "title": "test"
     },
     {
       "type": "small",
-      "title": "This is India an the best places you should go",
+      "title": "This is an example article",
       "url": "http://example.com/article.html",
       "image": "http://placehold.it/256x128"
     }
