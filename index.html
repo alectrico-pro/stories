@@ -55,11 +55,14 @@
 
       <amp-story-page id="vertical-template-thirds">
         <amp-story-grid-layer template="thirds">
-          <div class="content" grid-area="upper-third">La Calidad Comercial</div>
+          <div class="content" animate-in="rotate-in-left" id="comercial" grid-area="upper-third">La Calidad Comercial 
 	    <p>La calidad comercial es la calidad de la atención a cliente.
-	      
 	    </p>
-          <div class="content" grid-area="middle-third">La Calidad de Suministro</div>
+
+	  </div>
+          <div class="content" animate-in="fly-in-right" animate-in-after="comercial" grid-area="middle-third">La Calidad de Suministro
+	    <p>Le cortan la luz con frecuencia?</p>
+	  </div>
           <div class="content" grid-area="lower-third">La Calidad de Producto</div>
         </amp-story-grid-layer>
         <amp-story-cta-layer>
